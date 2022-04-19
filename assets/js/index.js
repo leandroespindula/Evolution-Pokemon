@@ -1,25 +1,25 @@
-const elementoNome = document.getElementById('nome'); /* Cria a variável elementoNome e coloca o elemento com o id nome nela */
-const elementoSituacao = document.querySelector('#situacao'); /* Cria a variável elementoSituacao e coloca o elemento com o id situacao nela */
-const elementoImg = document.querySelector('#imagem') /* Cria a variável elementoImg e coloca o elemento com o id imagem nela */
-let elementoBtn = document.querySelector('#alterar') /* Cria a variável elementoBtn e coloca o elemento com o id alterar nela */
+const elementoNome = document.getElementById('nome'); 
+const elementoSituacao = document.querySelector('#situacao'); 
+const elementoImg = document.querySelector('#imagem') 
+let elementoBtn = document.querySelector('#alterar')
 
-/* Adiciona o evento de click no elementoBtn e executa a função anonima (arrow function) */
+
 elementoBtn.addEventListener('click', () =>{
-    /* Verifica se o valour do botão é 'primeiro', se for troque de humor para o Hulk */
+   
     if(elementoBtn.value == 'primeiro'){
-        elementoImg.src = './assets/img/nivel_1.png' /* Troca a imagem do personagem */
-        elementoNome.innerText = 'Charmander' /* Altera o texto do elemento nome */
-        elementoSituacao.innerText = 'Força 3' /* Altera o texto do elemento situação */
-        elementoBtn.value = 'segundo' /* Altera valor do botão */
-    } else if(elementoBtn.value == 'segundo') { /* Verifica se o valour do botão é 'segundo', se for troque de humor para o Dr. Hulk */
-        elementoImg.src = './assets/img/nivel_2.png'  /* Troca a imagem do personagem */
-        elementoNome.innerText = 'Charmeleon' /* Altera o texto do elemento nome */
-        elementoSituacao.innerText = 'Força 4' /* Altera o texto do elemento situação */
-        elementoBtn.value = 'terceiro'  /* Altera valor do botão */
-    } else { /* Se os valores do botão não forem, 'primeiro' nem 'segundo' mude para o Dr. Banner */
-        elementoImg.src = './assets/img/nivel_3.png' /* Troca a imagem do personagem */
-        elementoNome.innerText = 'Charizard' /* Altera o texto do elemento nome */
-        elementoSituacao.innerText = 'Força 5' /* Altera o texto do elemento situação */
-        elementoBtn.value = 'primeiro' /* Altera valor do botão */
+        elementoImg.src = './assets/img/nivel_1.png'
+        elementoNome.innerText = 'Charmander'
+        elementoSituacao.innerText = 'Força 3'
+        elementoBtn.value = 'segundo'
+    } else if(elementoBtn.value == 'segundo') { 
+        elementoImg.src = './assets/img/nivel_2.png'  
+        elementoNome.innerText = 'Charmeleon'
+        elementoSituacao.innerText = 'Força 4' 
+        elementoBtn.value = 'terceiro' 
+    } else { 
+        elementoImg.src = './assets/img/nivel_3.png' 
+        elementoNome.innerText = 'Charizard' 
+        elementoSituacao.innerText = 'Força 5' 
+        elementoBtn.value = 'primeiro' 
     }
 })
