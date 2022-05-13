@@ -4,7 +4,7 @@
     <img width= 500 src="assets/paraReadme/evolution-pokemon.gif"
 </p>  
 
-## Deploy do site
+## Deploy
     
 https://leandroespindula.github.io/Evolution-Pokemon/   
          
@@ -14,7 +14,6 @@ https://leandroespindula.github.io/Evolution-Pokemon/
 
 ## Features
 
-- [x] Pagina Inicial
 - [x] Ao clicar no botão alterar imagem ou texto
 
 ## Stacks
